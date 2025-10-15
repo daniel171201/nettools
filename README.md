@@ -33,16 +33,6 @@ docker pull ghcr.io/daniel171201/nettools:latest
 docker run -it --rm ghcr.io/daniel171201/nettools:latest
 ```
 
-Or with Podman:
-
-```bash
-# Pull the image
-podman pull ghcr.io/daniel171201/nettools:latest
-
-# Run interactively
-podman run -it --rm ghcr.io/daniel171201/nettools:latest
-```
-
 ## 🏗 Building Locally
 
 To build the image locally:
@@ -55,8 +45,6 @@ cd docker_nettools
 # Build with Docker
 docker build -t nettools .
 
-# Or build with Podman
-podman build -t nettools .
 ```
 
 For multi-architecture build:
@@ -65,8 +53,6 @@ For multi-architecture build:
 # Using Docker
 docker buildx build --platform linux/amd64,linux/arm64 -t nettools .
 
-# Using Podman
-podman build --platform linux/amd64,linux/arm64 -t nettools .
 ```
 
 ## 🚢 Running in Kubernetes
